@@ -1,0 +1,442 @@
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+/* font-family: 'Monoton', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,200&display=swap');
+/* font-family: 'IBM Plex Sans', sans-serif; */
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --primary: #fbc531;
+  --secondary: #232b38;
+  --ternary: #6c6c6c;
+  --danger: #e84118;
+  --pure: #fefefe;
+  --light: #f0f0f0;
+  --heaven: #ffffff;
+  --cool-blue: #00a8ff;
+}
+::selection {
+  background-color: brown;
+  color: aliceblue;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.text-center{
+  text-align: center;
+}
+.magic-shadow {
+  border-bottom: 2px solid var(--pure);
+  box-shadow: 0px 2px 9px 0px var(--secondary);
+  border-radius: 10px;
+}
+.btn{
+    padding: 0.8rem 1rem;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    line-height: 0.8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transform: all 0.3s ease;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--heaven);
+    transition: all .3s ease;
+}
+
+
+
+.btn-secondary{
+    background-color: var(--secondary);
+    color: var(--heaven);
+    transition: all .3s ease;
+}
+.btn-primary:hover{
+    background-color: var(--heaven);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+
+}
+
+.btn-secondary:hover{
+    background-color: var(--heaven);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#topbar {
+  background-color: var(--secondary);
+  color: var(--pure);
+  padding: 0.75rem 0rem;
+}
+
+#topbar .container .icons a {
+  margin-right: 0.8rem;
+  color: var(--pure);
+}
+#topbar .auth > div a {
+  color: var(--pure);
+  text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+#topbar .container .auth .divider {
+  padding: 0 1rem;
+  /* margin: 0px 10px; */
+  /* border-left: 5px solid red;
+    width: 4px;
+    height: 20px;
+    display: block; */
+  /* color: var(--light); */
+}
+#topbar .container .auth > div i {
+  margin-right: 0.35rem;
+}
+
+#nav{
+  padding-bottom: 2rem;
+}
+
+#nav .top {
+  padding: 1.5rem 0;
+}
+
+#nav .top .contact i,
+#nav .top .time i {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  color: var(--primary);
+}
+
+#nav .top .contact h5,
+#nav .top .time h5 {
+  margin-bottom: 0.25rem;
+}
+
+#nav .top .contact h6,
+#nav .top .time h6 {
+  letter-spacing: 0.055rem;
+  font-size: 0.75rem;
+  color: var(--ternary);
+}
+
+#nav .top .branding h1 {
+  font-family: "Monoton", cursive;
+  font-size: 2rem;
+  padding-right: 60px;
+  /* this is see */
+}
+
+#nav .navbar .container a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+}
+#nav .navbar .container a:hover {
+  background-color: var(--primary);
+  color: var(--pure);
+}
+
+#nav .navbar .container .active {
+  background-color: var(--primary);
+  color: var(--pure);
+}
+
+#hero {
+  height: 600px;
+  /* width: 100%; */
+    background-image: url(../images/image1.jpg);
+  /* filter: blur(1px); */
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  
+  /* margin-bottom: 2rem; */
+  /* background: linear-gradient(45deg, rgba(138, 137, 137, 0.171), rgba(177, 176, 176, 0.1)); */
+}
+ 
+#hero .container{
+  position: relative;
+  
+
+}
+
+#hero .welcome span{
+    font-family: 'IBM Plex Sans', sans-serif;
+  margin-right: 00.75rem;
+  color: var(--secondary);
+}
+
+#hero .welcome h3{
+font-family: 'Monoton', cursive;
+    
+}
+#hero h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--secondary);
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+
+}
+#hero h1 span{
+    color: var(--primary);
+    font-weight: 900;
+}
+
+#hero p{
+    width: 50%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: var(--pure);
+
+}
+
+#hero button:first-child{
+    margin-right: 0.5rem;
+}
+
+#hero .hero-image{
+  position: absolute;
+  bottom: -50px;
+  right: 20px;
+}
+
+#hero .hero-image img{
+  width: 315px;
+}
+
+
+#top-product{
+  padding: 4rem 0;
+  background-color: var(--light);
+  box-shadow: 0px 1px 10px .5px rgba(128, 128, 128, 0.658);
+}
+
+#top-product h1{
+font-family: 'Monoton', cursive;
+   text-align: center;
+   margin-bottom: 4rem;
+   font-weight: 600;
+    letter-spacing: 1px;
+    /* border-bottom: 1px solid var(--primary);
+    width: 50%; */
+    /* text-align: center; */
+   
+}
+
+
+#top-product .container .slider .food-slider{
+
+}
+#top-product .container .slider .food-slider .food-card{
+ 
+  background-color: var(--heaven);
+  padding: 1.5rem 0;
+  border-radius:4px ;
+}
+
+#top-product .container .slider .food-card .product-image img{
+  width: 350px;
+  object-fit: contain;
+}
+
+hr{
+  border: 1px solid var(--light);
+  opacity: 0.8;
+  margin: 1rem 0;
+}
+
+.food-card div h2{
+font-family: 'IBM Plex Sans', sans-serif;
+font-size: 1.3rem;
+margin: 0.25rem;
+text-align: center;
+}
+
+.stars{
+  margin-bottom: 0.5rem;
+}
+.stars i{
+  margin-right: 0.23rem ;
+}
+
+.price{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: var(--danger);
+  margin-bottom: 1rem;
+
+}
+
+.food-slider{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* background-color: #00a8ff; */
+  grid-column-gap: 20px;
+}
+
+
+.add-btn{
+  font-family: 'IBM Plex Sans', sans-serif;
+color: var(--secondary);
+background-color: var(--heaven);
+border: 2px solid var(--primary);
+border-radius: 4px;
+display: flex;
+/* padding: .6rem 1rem; */
+align-items: center;
+width: 50%;
+cursor: pointer;
+font-size: 1rem;
+transform: all .4s ease;
+}
+
+.add-btn i{
+  background-color: var(--primary);
+  padding: 0.5rem;
+  height: 32px;
+  color: var(--pure);
+  margin-right: .5rem;
+}
+
+.add-btn:hover{
+  background-color: var(--primary);
+  color: var(--pure);
+}
+
+
+.view-more-div{
+  margin: 4rem 0;
+}
+
+
+#about-fresh-meal{
+  margin: 4rem 0rem;
+}
+
+#about-fresh-meal .container h1{
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: 400;
+  font-family: "Monoton", cursive;
+  word-spacing: .5rem;
+
+}
+
+#about-fresh-meal .container .main-content{
+  background-color: #00a8ff;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.about-info{
+  padding: 1rem 2rem;
+  padding-right: 4rem;
+}
+.about-info h2{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5rem;
+
+  font-weight: 900;
+   
+}
+
+.about-info p{
+  padding: 1rem 0;
+  padding-bottom: 2rem;
+}
+
+
+
+
+
+#about-fresh-meal .container{
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+#about-fresh-meal .about-image img{
+  width: 500px;
+
+}
+
+
+
+
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
+}
